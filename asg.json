@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "applicationSecurityGroups_testasg_name": {
+            "defaultValue": "testasg",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Network/applicationSecurityGroups",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('applicationSecurityGroups_testasg_name')]",
+            "location": "eastus",
+            "tags": {
+                "envoirment": "test"
+            },
+            "properties": {}
+        }
+    ]
+}
