@@ -11,7 +11,7 @@
     "resources": [
         {
             "type": "Microsoft.Network/applicationSecurityGroups",
-            "apiVersion": "2019-09-01",
+            "apiVersion": "2016-02-01",
             "name": "[parameters('applicationSecurityGroups_testasg_name')]",
             "location": "eastus",
             "tags": {
